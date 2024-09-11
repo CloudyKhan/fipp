@@ -64,7 +64,7 @@ usage: python3 fipp.py [-h] [-l LENGTH] [-s] [-n] [-c CAPSLOCK] [-i INPUT] [-o O
 | `-l LENGTH`      | Set the exact password length (default: 8)                                   |
 | `-s`, `--special`| Allow passwords with special characters (default: no special characters)      |
 | `-n`, `--number` | Allow passwords with numbers (default: no numbers)                           |
-| `-c CAPSLOCK`    | Require at least this many uppercase letters (optional)                      |
+| `-c CAPSLOCK`    | Minimum number of uppercase letters (optional, no uppercase letter check if omitted)|
 | `-i INPUT`       | Specify input password file (required)                                       |
 | `-o OUTPUT`      | Specify output file for filtered passwords (default: `output.txt`)           |
 | `-e ENCODING`    | Specify file encoding (default: ISO-8859-1, other options: UTF-8, UTF-16)    |
