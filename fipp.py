@@ -21,7 +21,7 @@ def show_help():
  | _|  | | |  _/|  _/
  |_|  |___||_|  |_|  
 
-(F)lexible (I)nteractive (P)assword (P)rocessor
+Flexible Interactive Password Processor
 
 usage: fipp.py [-h] [-l LENGTH] [-s] [-n] [-c CAPSLOCK] [-i INPUT] [-o OUTPUT] [-e ENCODING] [-I]
 
@@ -30,7 +30,7 @@ options:
   -l LENGTH, --length      Exact password length (default: 8)
   -s, --special            Allow passwords with special characters (default: no special characters, spaces are considered special characters)
   -n, --number             Allow passwords with numbers (default: no numbers)
-  -c CAPSLOCK, --capslock  Require at least this many uppercase letters (optional; no uppercase letter check if omitted)
+  -c CAPSLOCK, --capslock  Minimum number of uppercase letters (optional, no uppercase letter check if omitted)
   -i INPUT, --input        Input password file (required)
   -o OUTPUT, --output      Output file for filtered passwords (can be a full file path or current directory)
   -e ENCODING, --encoding  Specify file encoding (default: ISO-8859-1, common options: UTF-8, UTF-16)
@@ -42,15 +42,8 @@ Example Usage:
 
 Notes:
   - If `-s` (special characters) or `-n` (numbers) are not specified, passwords with special characters, spaces, or numbers will be excluded by default.
-  - If `-c CAPSLOCK` is omitted, no check for uppercase letters will be performed.
   - If you're not sure about encoding, proceed with default (ISO-8859-1).
-  - If you'd like to change your file's encoding (e.g., password wordlists like `rockyou.txt` are typically in ISO-8859-1), you can convert it using the following command on Linux:
-
-      iconv -f <source_encoding> -t <target_encoding> input_file -o output_file
-
-  - Replace `input_file` with the name of your actual input file and `output_file` with the desired output filename.
-  - This ensures the script can read files correctly if a different encoding is required.
-  """)
+  """ )
 
 # Ensure the output directory exists before writing the filtered passwords
 def ensure_dir(file_path):
