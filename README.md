@@ -1,6 +1,6 @@
 # fipp.py - Flexible Interactive Password Processor
 
-**fipp.py** is a flexible, interactive password processor that filters and customizes password lists based on length, special characters, numbers, uppercase requirements, and encoding, with both command-line and interactive modes. It can be tailored and customized to fit a wide variety of Passowrd Policies.
+**fipp.py** is a flexible, interactive password processor that filters and customizes password lists based on length, special characters, numbers, uppercase requirements, and encoding, with both command-line and interactive modes. It can be tailored and customized to fit a wide variety of Passoword Policies.
 
 ### Table of Contents
 - [Features](#features)
