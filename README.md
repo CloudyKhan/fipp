@@ -127,9 +127,6 @@ Replace `input_file` with the name of your actual input file and `output_file` w
 
 ---
 
-## Planned Updates
-- Future versions will implement `argparse` for more efficient and streamlined argument handling
----
 
 **Happy password processing!** If you have any issues, feel free to reach out or contribute to the project.
 
